@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  blog:
+    image: jekyll/jekyll:4
+    container_name: blog
+    command: jekyll serve
+    volumes:
+    - ./:/srv/jekyll
+    ports:
+      - "4000:4000"

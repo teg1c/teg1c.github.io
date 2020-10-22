@@ -1,0 +1,275 @@
+---
+layout: null
+title: github 加速
+permalink: /github
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="author" content="mengkun">
+
+
+    <title>GitHub 加速下载</title>
+    <meta name="description" content="从GitHub上下载源码下载速度慢、根本下不动？本工具可以帮你！"/>
+    <meta name="keywords" content="GitHub,GitHub下载,加速下载,GitHub加速"/>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+        [class*=" mo-tipsy--"],[class^=mo-tipsy--]{position:relative;overflow:visible}[class*=" mo-tipsy--"]:after,[class*=" mo-tipsy--"]:before,[class^=mo-tipsy--]:after,[class^=mo-tipsy--]:before{position:absolute;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);visibility:hidden;opacity:0;pointer-events:none;-webkit-transition:all .18s ease-out .18s;transition:all .18s ease-out .18s;z-index:10;-webkit-transform-origin:top;transform-origin:top;box-sizing:border-box;visibility:hidden}[class*=" mo-tipsy--"]:before,[class^=mo-tipsy--]:before{content:'';background:0 0;border:6px solid transparent}[class*=" mo-tipsy--"]:after,[class^=mo-tipsy--]:after{background-color:rgba(17,17,17,.9);border-radius:1px;color:#fff;content:attr(data-tipsy);font-size:12px;margin:0;padding:8px 10px;line-height:1;white-space:nowrap;text-align:center;max-height:80vh}[class*=" mo-tipsy--"]:hover:after,[class*=" mo-tipsy--"]:hover:before,[class^=mo-tipsy--]:hover:after,[class^=mo-tipsy--]:hover:before{visibility:visible;opacity:1;pointer-events:auto}[class*=" mo-tipsy--"]:not([data-tipsy]):hover:after,[class*=" mo-tipsy--"]:not([data-tipsy]):hover:before,[class^=mo-tipsy--]:not([data-tipsy]):hover:after,[class^=mo-tipsy--]:not([data-tipsy]):hover:before{display:none}.mo-tipsy--top:after,.mo-tipsy--top:before,.mo-tipsy:after,.mo-tipsy:before{left:50%;bottom:100%;-webkit-transform:translate3d(-50%,10px,0);transform:translate3d(-50%,10px,0)}.mo-tipsy--top:before,.mo-tipsy:before{margin-bottom:-1px;border-top-color:rgba(17,17,17,.9)}.mo-tipsy--top:after,.mo-tipsy:after{margin-bottom:11px}.mo-tipsy--top:hover:after,.mo-tipsy--top:hover:before,.mo-tipsy:hover:after,.mo-tipsy:hover:before{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0)}.mo-tipsy--bottom:after,.mo-tipsy--bottom:before{left:50%;top:100%;-webkit-transform:translate3d(-50%,-10px,0);transform:translate3d(-50%,-10px,0)}.mo-tipsy--bottom:before{margin-top:-1px;border-bottom-color:rgba(17,17,17,.9)}.mo-tipsy--bottom:after{margin-top:11px}.mo-tipsy--bottom:hover:after,.mo-tipsy--bottom:hover:before{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0)}.mo-tipsy--left:after,.mo-tipsy--left:before{right:100%;top:50%;-webkit-transform:translate3d(10px,-50%,0);transform:translate3d(10px,-50%,0)}.mo-tipsy--left:before{margin-right:-1px;border-left-color:rgba(17,17,17,.9)}.mo-tipsy--left:after{margin-right:11px}.mo-tipsy--left:hover:after,.mo-tipsy--left:hover:before{-webkit-transform:translate3d(0,-50%,0);transform:translate3d(0,-50%,0)}.mo-tipsy--right:after,.mo-tipsy--right:before{left:100%;top:50%;-webkit-transform:translate3d(-10px,-50%,0);transform:translate3d(-10px,-50%,0)}.mo-tipsy--right:before{margin-left:-1px;border-right-color:rgba(17,17,17,.9)}.mo-tipsy--right:after{margin-left:11px}.mo-tipsy--right:hover:after,.mo-tipsy--right:hover:before{-webkit-transform:translate3d(0,-50%,0);transform:translate3d(0,-50%,0)}.mo-tipsy--top-left:after,.mo-tipsy--top-left:before{left:0;bottom:100%;-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}.mo-tipsy--top-left:before{margin-left:6px;margin-bottom:-1px;border-top-color:rgba(17,17,17,.9)}.mo-tipsy--top-left:after{margin-bottom:11px}.mo-tipsy--top-left:hover:after,.mo-tipsy--top-left:hover:before{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.mo-tipsy--top-right:after,.mo-tipsy--top-right:before{right:0;bottom:100%;-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}.mo-tipsy--top-right:before{margin-right:6px;margin-bottom:-1px;border-top-color:rgba(17,17,17,.9)}.mo-tipsy--top-right:after{margin-bottom:11px}.mo-tipsy--top-right:hover:after,.mo-tipsy--top-right:hover:before{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.mo-tipsy--bottom-right:after,.mo-tipsy--bottom-right:before{right:0;top:100%;-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}.mo-tipsy--bottom-right:before{margin-right:6px;margin-top:-1px;border-bottom-color:rgba(17,17,17,.9)}.mo-tipsy--bottom-right:after{margin-top:11px}.mo-tipsy--bottom-right:hover:after,.mo-tipsy--bottom-right:hover:before{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.mo-tipsy--bottom-left:after,.mo-tipsy--bottom-left:before{left:0;top:100%;-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}.mo-tipsy--bottom-left:before{margin-left:6px;margin-top:-1px;border-bottom-color:rgba(17,17,17,.9)}.mo-tipsy--bottom-left:after{margin-top:11px}.mo-tipsy--bottom-left:hover:after,.mo-tipsy--bottom-left:hover:before{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.mo-tipsy--large:after,.mo-tipsy--medium:after,.mo-tipsy--small:after{white-space:normal;line-height:1.4;word-wrap:break-word}.mo-tipsy--small:after{width:80px}.mo-tipsy--medium:after{width:160px}.mo-tipsy--large:after{width:260px;max-width:90vw}
+    </style>
+
+    <style>
+        html, body,
+        div, footer,
+        ol, ul, li,
+        input, button,
+        h1, h5 {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Microsoft Yahei;
+        }
+
+        body {
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 30px;
+        }
+
+        /* 页头 */
+        .header {
+            text-align: right;
+            padding: 20px 25px 0 0;
+            font-size: 14px;
+        }
+        .header a {
+            color: #000;
+            text-decoration: none;
+            padding-left: 18px;
+        }
+        .header sup {
+            color: #f44336;
+        }
+
+        /* 页面主体部分 */
+        .main {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 150px 15px 0;
+        }
+
+        .main h1 {
+            font-size: 34px;
+            font-weight: 400;
+            margin: 40px auto;
+            color: #24292e;
+        }
+
+        /* 表单 */
+        .mk-side-form button,
+        .mk-side-form input {
+            height: 45px;
+            font-size: 16px;
+            position: relative;
+            overflow: visible;
+            outline: none;
+
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        .mk-side-form input {
+            float: left;
+            padding: 10px 8px;
+            width: 77%;
+            border: 2px solid #2378ff;
+            border-right: none;
+            border-radius: 3px 0 0 3px!important;
+        }
+        .mk-side-form button {
+            cursor: pointer;
+            width: 23%;
+            border-radius: 0 3px 3px 0;
+            text-transform: uppercase;
+            color: #fff;
+            background: #2378ff;
+            border: none;
+            user-select: none;
+        }
+        .mk-side-form button:hover {
+            opacity: .8;
+        }
+
+        /* 加速通道选择 */
+        .channel-select {
+            text-align: left;
+            font-size: 14px;
+            margin-top: 10px;
+            padding-left: 2px;
+        }
+        .channel-select > label {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .channel-select input[type=radio] {
+            cursor: pointer;
+            vertical-align: text-bottom;
+            margin-bottom: 3px;
+        }
+
+        .text-ad {
+            float: right;
+            text-decoration: none;
+            color: #f44336;
+        }
+
+        /* 帮助信息 */
+        .help {
+            text-align: left;
+            margin: 20px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f6f6f6;
+        }
+        .help h5 {
+            font-size: 14px;
+            margin: 2px 0 6px;
+        }
+        .help ol {
+            margin-left: 16px;
+        }
+        .help li {
+            line-height: 22px;
+        }
+        .help li, .help li a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #7e7e7e;
+        }
+
+        /* 页脚 */
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: #e1e1e1;
+            color: #7e7e7e;
+            font-size: 12px;
+            line-height: 30px;
+            padding-left: 10px;
+            overflow: hidden;
+        }
+        .footer-right {
+            float: right;
+            padding-right: 10px;
+        }
+        .footer a {
+            color: #2c1e1c;
+        }
+
+        @media screen and (max-width: 660px) {
+            .header {
+                padding-right: 15px;
+            }
+            .main {
+                padding-top: 50px;
+            }
+
+            .text-ad {
+                display: none;
+            }
+        }
+        .block-hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <!--<a href="##" onclick="building(); return false;">API</a>-->
+    <a href="/" >博客</a>
+</header>
+
+<section class="main">
+    <h1>GitHub 加速下载</h1>
+
+    <form onsubmit="download(); return false;">
+        <div class="mk-side-form">
+            <input type="url" name="url" id="url-input" placeholder="请贴入来自 GitHub 的链接" pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob)|(raw\.githubusercontent\.com))\/.+$" required>
+            <button type="submit">加速下载</button>
+        </div>
+
+        <div class="channel-select">
+            <label class="mo-tipsy--bottom-left" data-tipsy="由 Cloudflare Workers 提供加速支持">
+                <input type="radio" name="channel" value="cloudflare" checked />
+                线路一
+            </label>
+<!--            <a class="text-ad" href="/" target="" rel="nofollow" title="home">-->
+<!--                Blog-->
+<!--            </a>-->
+        </div>
+    </form>
+
+    <div class="help">
+        <h5>使用方法：</h5>
+        <ol>
+            <li>打开你要下载的 <a href="https://github.com/" target="_blank">GitHub</a> 仓库页面</li>
+            <li>点击右侧的绿色按钮 "Code" > "Download ZIP"</li>
+            <li>等浏览器弹出下载框后复制下载框中的链接地址并粘贴到以上输入框</li>
+            <li>点击加速下载</li>
+        </ol>
+        <h5>命令行clone：</h5>
+        <ol>
+            <li style="list-style-type:none">git clone https://tegic.gitclone.workers.dev/https://github.com/teg1c/project.git</li>
+        </ol>
+    </div>
+</section>
+
+<footer class="footer">
+    本工具仅可用于从 GitHub 上加速下载学习资源及相关代码！请勿用于非法用途，否则后果自负！
+    <span class="footer-right">
+        Powered by
+        <a href="https://workers.cloudflare.com/" target="_blank">Cloudflare Workers</a>
+    </span>
+</footer>
+
+<script>
+    function building() {
+        swal("Oops", "API 接口正在建设中...", "info", { button: "知道了" });
+    }
+
+    function getRadioVal(radioName) {
+        var radio = document.getElementsByName(radioName);
+        for (i = 0; i < radio.length; i++) {
+            if (radio[i].checked) {
+                return radio[i].value;
+            }
+        }
+        return false;
+    }
+
+    function download() {
+        var url = document.getElementById("url-input").value;
+        document.getElementById("url-input").value = "";
+
+        if(url.toLowerCase().indexOf(("github").toLowerCase()) < 0) {
+            /* 防止被滥用 */
+            swal("Oops", "本工具仅能用于加速下载来自 GitHub 的资源！", "error", { button: "知道了" });
+        } else {
+            window.location.href = "https://tegic.gitclone.workers.dev/" + url;
+        }
+    }
+</script>
+
+</body>
+</html>
