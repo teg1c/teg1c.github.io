@@ -9,11 +9,3 @@ title: 关于我
 
 如果您对我开源的项目有疑问，请联系我，谢谢~
 
-
-## 联系我
-
-- Email：teg1c@foxmail.com
-
-- Wechat: 35350826
-
-- GitHub : [https://github.com/teg1c](https://github.com/teg1c)
