@@ -95,6 +95,10 @@ title: 个人简历
 
 - [Swoole 爬虫 ](https://github.com/teg1c/zf_spider)：使用 swoole 对某教务爬虫，模拟登陆以及解析 Dom 网页。
 
+- [Hyperf Redis 分布式锁 ](https://github.com/teg1c/hyperf-lock)：基于 Hyperf 框架的 Redis 分布式锁组件。
+  
+- [Hyperf 阿里云绿网内容审核/腾讯云内容审核](https://github.com/teg1c/security)：基于 Hyperf 框架的 阿里云绿网内容审核/腾讯云内容审核组件。
+
 
 # 相关技能
 
