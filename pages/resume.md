@@ -7,7 +7,7 @@ title: 个人简历
 
 - 手机：18628988387
 
-- Email：i@izww.cn
+- Email：teg1c@foxmail.com
 
 - QQ/微信号：35350826
 
@@ -19,7 +19,7 @@ title: 个人简历
 
 - 工作年限：6年
 
-- 期望职位：PHP工程师
+- 期望职位：高级PHP工程师
 
 
 
