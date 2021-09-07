@@ -3,7 +3,9 @@
   font-display: fallback;
   src: url('../font/consola.ttf');
 }
-
+.page{
+  font-size: 15px;
+}
 html {
   color: #333333;
   background: #ffffff;
