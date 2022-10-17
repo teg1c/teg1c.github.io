@@ -5,7 +5,7 @@ title: tegic
 description: Tegic的个人博客
 keywords: Tegic,Blog,PHP
 author: Tegic
-footerText: '备案'
+footerText: '<a href="http://beian.miit.gov.cn/">蜀ICP备15004606号-4</a>'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
