@@ -5,7 +5,7 @@ title: tegic
 description: Tegic的个人博客
 keywords: Tegic,Blog,PHP
 author: Tegic
-footerText: ''
+footerText: '备案'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
